@@ -1,5 +1,6 @@
 # Hero-Manager
-Gerenciador de heróis, feito como trabalho para a escola
+Gerenciador de heróis
+
 Feito por Daniel Henrique Sieves e Thiago William Borges
 
 1. pip install Flask
