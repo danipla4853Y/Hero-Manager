@@ -1,7 +1,7 @@
 # Hero-Manager
 Gerenciador de heróis
 
-Feito por Daniel Henrique Sieves e Thiago William Borges
+Feito por Daniel Henrique Sieves e Thiago Willian Borges
 
 1. pip install Flask
 2. Execute o arquivo db.py
