@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Heróis</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='logo.svg') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🦸 HEROES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('herois') }}">Heróis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('profile') }}">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>⚡ Bem-vindo ao Mundo dos Heróis</h1>
+            <p>Crie sua equipe, gerencie seus heróis e domine o universo</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('herois') }}" class="btn-hero btn-primary-hero">🦸 Explorar Heróis</a>
+                <a href="{{ url_for('cadastro') }}" class="btn-hero btn-secondary-hero">📝 Começar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-title">
+            <h2>✨ Recursos Incríveis</h2>
+            <p>Tudo que você precisa para gerenciar seus heróis</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🦸</div>
+                <h3>Galeria de Heróis</h3>
+                <p>Acesso a uma galeria completa com mais de 20 heróis diferentes. Veja habilidades, força e características únicas.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚔️</div>
+                <h3>Forma Sua Equipe</h3>
+                <p>Crie sua equipe personalizada com até 5 heróis. Escolha os melhores para suas estratégias.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏠</div>
+                <h3>Base de Heróis</h3>
+                <p>Mantenha seus heróis reservas na base. Reorganize sua equipe conforme necessário.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👤</div>
+                <h3>Perfil Personalizado</h3>
+                <p>Crie seu perfil, edite informações pessoais e acompanhe sua equipe em tempo real.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Busca Avançada</h3>
+                <p>Encontre heróis rapidamente por nome ou ID. Filtros inteligentes para facilitar sua busca.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💾</div>
+                <h3>Dados Seguros</h3>
+                <p>Seus dados são armazenados com segurança. Acesse de qualquer lugar, a qualquer hora.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h4>25+</h4>
+                <p>Heróis Disponíveis</p>
+            </div>
+            <div class="stat-item">
+                <h4>∞</h4>
+                <p>Possibilidades</p>
+            </div>
+            <div class="stat-item">
+                <h4>⚡</h4>
+                <p>Poder Infinito</p>
+            </div>
+            <div class="stat-item">
+                <h4>🎮</h4>
+                <p>Experiência</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>🚀 Pronto para Começar?</h2>
+            <p>Junte-se a milhares de usuários que já estão montando suas equipes de heróis. Crie sua conta agora e comece sua jornada!</p>
+            <a href="{{ url_for('cadastro') }}" class="btn-hero btn-primary-hero">Criar Conta Grátis</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <strong>HEROES</strong> - Gerenciador de Heróis </p>
+        <p style="margin-top: 10px;">
+            <a href="{{ url_for('herois') }}">Heróis</a> • 
+            <a href="{{ url_for('profile') }}">Perfil</a> • 
+            <a href="{{ url_for('login') }}">Login</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
